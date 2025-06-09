@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { assets } from '../../assets/assets';
 
-import { addFood } from '../../services/foodservice';
+import { addFood } from '../../services/foodService';
 import { ToastContainer, toast } from 'react-toastify';
 
 const AddFood = () => {
