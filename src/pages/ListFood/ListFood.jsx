@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import './ListFood.css';
-import { getFoodList, deleteFood } from '../../services/foodservice';
+import { getFoodList, deleteFood } from '../../services/foodService';
 
 
 const ListFood = () => {
