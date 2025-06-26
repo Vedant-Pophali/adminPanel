@@ -7,7 +7,7 @@ const Orders = () => {
 
   const fetchOrders = async () => { 
     try {
-      const response = await axios.get("https://springfoodapp-production.up.railway.app/api/order/all");
+      const response = await axios.get("http://localhost:8080/api/order/all");
       console.log("Fetched orders:", response.data);
       setData(response.data);
     } catch (error) {
@@ -22,7 +22,7 @@ const Orders = () => {
     }
     try {
       const response = await axios.patch(
-        `https://springfoodapp-production.up.railway.app/api/order/status/${orderId}?status=${event.target.value}`
+        `http://localhost:8080/api/order/status/${orderId}?status=${event.target.value}`
       );
       if (response.status === 200) {
         await fetchOrders();
